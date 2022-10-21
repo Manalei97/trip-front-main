@@ -1,7 +1,16 @@
+import {gsap} from 'gsap'
+import { useEffect } from 'react'
 import traveller from '../../assets/images/traveller.png'
 import './Hero.css'
 
 const Hero = () => {
+    useEffect(()=>{
+        gsap.to('#plane',{
+            rotate:'360',
+            duration:3,
+            repeat:-1
+        })
+    },[])
     return (
         <div className="container">
             <div className="row align-items-center">
@@ -12,7 +21,7 @@ const Hero = () => {
                     <button type="button" className="btn btn-warning" id="hero-button">Find out more</button>
                 </div>
                 <div className="col-12 col-lg-6">
-                    <svg width="167" height="154" viewBox="0 0 167 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg id='plane' className='position-absolute' width="167" height="154" viewBox="0 0 167 154" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M96.1744 86.8472C94.816 87.1514 93.493 87.715 92.2875 88.5024C89.1467 90.5037 87.3194 93.3604 88.2063 94.8826C89.0933 96.4047 92.3583 96.0154 95.4991 94.0141C96.7209 93.2545 97.8063 92.2837 98.6884 91.1618C99.0978 90.6197 99.1713 89.9442 98.8761 89.4393L97.7239 87.4619C97.4307 86.9554 96.8226 86.7145 96.1744 86.8472Z" fill="#D5D6DB" />
                         <path d="M88.2873 59.8541C87.3024 60.0749 86.343 60.4837 85.4687 61.0547C83.1919 62.5055 81.8661 64.5769 82.5087 65.6797C83.1513 66.7825 85.5198 66.5 87.7964 65.0493C88.6823 64.4983 89.4692 63.794 90.109 62.9804C90.4055 62.5874 90.4586 62.0981 90.2446 61.732L89.4103 60.3002C89.1981 59.9331 88.7574 59.758 88.2873 59.8541Z" fill="#D5D6DB" />
                         <path d="M75.4733 60.9845C75.254 60.9601 75.0202 61.0185 74.8174 61.148L69.4693 64.5562C69.0219 64.8404 68.8429 65.3878 69.0698 65.779C69.1217 65.8686 69.1927 65.9451 69.279 66.0041L82.4606 75.0891L100.294 63.7244L75.4733 60.9845Z" fill="#029BC5" />
