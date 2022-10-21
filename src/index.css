@@ -1,0 +1,48 @@
+body {
+  background-image: url(../src/assets/images/background.png);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.volkhov {
+  font-family: 'Volkhov', serif;
+}
+.font-light {
+  font-weight: 100;
+}
+.font-bold {
+  font-weight: 600;
+}
+.bg-yellow {
+  background-color: #F0BB1F;
+}
+.bg-orange {
+  background-color: #DF6951;
+}
+.bg-blue {
+  background-color: #5E6282;
+}
+.bg-green {
+  background-color: #006380;
+}
+.color-orange {
+  color: #DF6951;
+}
+.color-blue {
+  color: #5E6282;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.tagline {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.big-margin {
+  margin-top: 100px;
+}
